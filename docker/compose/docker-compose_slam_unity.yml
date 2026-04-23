@@ -31,6 +31,7 @@ services:
   
   foxglove_bridge:
     image: us-central1-docker.pkg.dev/foxglove-images/images/foxglove_bridge:ros-humble-v3.2.6
+    platform: linux/amd64
     env_file:
       - .env
     networks:
